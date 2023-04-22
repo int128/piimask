@@ -47,4 +47,7 @@ jobs:
       - uses: actions/setup-go@v4
         with:
           go-version: 1.20.3
-      - run: go test -v ./...
+      - run: docker-compose up -d
+      - run: go run .
+        env:
+          DATABASE_URL: postgresql://app:example@localhost/app
