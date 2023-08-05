@@ -2,7 +2,7 @@ module github.com/int128/piimask
 
 go 1.20
 
-require github.com/jackc/pgx/v5 v5.4.2
+require github.com/jackc/pgx/v5 v5.4.3
 
 require (
 	github.com/jackc/pgpassfile v1.0.0 // indirect
